@@ -13,5 +13,5 @@ I trained a RF-DETR model and was involved in the decisions around labeling stra
 
 ### Technical Decisions: 
 - We used RF-DETR for defect detection since it gives real-time object detection with bounding boxes, localizing cracks on the facade rather than just flagging their presence.
-- We started with 6 defect classes and transitioned down to 1 class to improve accuracy at our scale, a intentional tradeoff of granularity for reliability (61.8% mAP@50, 57.2% precision).
+- We started with 6 defect classes, transitioned down to 1 class to test whether improve accuracy at our scale, the rebuilt back up to 5 classes, a intentional tradeoff of granularity for reliability (61.8% mAP@50, 57.2% precision).
 - Video was sampled into frames at 2-4fps with overlap minimized and blurry/redundant frames auto-filtered, to keep full facade coverage without overwhelming the pipeline with near-duplicate data.
