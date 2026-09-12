@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['Crack', 'Efflorescence', 'Rebar', 'Rust', 'Spall']
+
+roboflow:
+  workspace: phoebes-workspace-90vcb
+  project: dobby-2-raah5
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/phoebes-workspace-90vcb/dobby-2-raah5/dataset/2
